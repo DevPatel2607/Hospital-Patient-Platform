@@ -1,0 +1,12 @@
+{
+  "name": "equ-company",
+  "private": true,
+  "scripts": {
+    "frontend": "npm --prefix frontend run dev -- --host 0.0.0.0",
+    "backend": "npm --prefix backend start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
